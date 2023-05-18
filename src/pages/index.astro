@@ -4,45 +4,51 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+import { Icon } from 'astro-icon'
 ---
 
-<DefaultLayout title="Home">
+<DefaultLayout title="Inicio">
   <Hero />
   <section class="my-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Features</h2>
+      <h2 class="mb-16 text-6xl">ETAPAS DEL PROCESO</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:tailwind" title="Tailwind CSS">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+        <Feature icon="mdi:flag" title="PASO 1: ¿Qué prueba debo rendir?">
+          Todo depende de tu último año aprobado (validado en Chile) y de tus objetivos. ¿Deseas seguir estudiando en la educación superior como Universidad, Instituto Profesional o CFT?.
+          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
+            <!-- <Icon pack="ion" name="flag" /> -->
+            IR AL PASO 1
+          </a>
         </Feature>
-        <Feature icon="mdi:wheelchair-accessibility" title="a11y Components">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:to-do" title="PASO 2: Conoce la Prueba">
+          Entender bien la prueba de exámenes libres antes de rendirla es esencial. Conocer su estructura, tipo de preguntas y temas clave te dará más confianza y mejorará tus resultados. ¡Tu éxito depende de una buena preparación! Atrévete a aprender y avanzar.
+          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
+            IR AL PASO 2
+          </a>
         </Feature>
-        <Feature icon="mdi:looks" title="Prettier">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:sign" title="PASO 3: Inscríbete">
+          Inscríbete a los exámenes libres en ayudamineduc.cl. Rellena el formulario, elige tu prueba y verifica las fechas. ¡Es fácil y sencillo! 😉
+          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
+            IR AL PASO 3
+          </a>
         </Feature>
-        <Feature icon="mdi:eslint" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
+        <Feature icon="mdi:book-open-page-variant" title="PASO 4: Estudia">
+          Preparar bien tu examen libre es crucial. Así aseguras un buen rendimiento, entiendes mejor los contenidos y aumentas tus posibilidades de éxito. Recuerda, tu esfuerzo hoy se traduce en logros mañana. ¡Adelante!
+          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
+            IR AL PASO 4
+          </a>
         </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Blog">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
-        </Feature>
-        <Feature icon="mdi:language-markdown" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
-        </Feature>
-        <Feature icon="mdi:theme-light-dark" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
-        </Feature>
-        <Feature icon="mdi:cog" title="Design System">
-          The theme offers some very handy utilities to help you build your website faster.
-        </Feature>
-        <Feature icon="mdi:lighthouse" title="Lighthouse Scores">
-          Excellent lighthouse scores means your website will load faster and get better SEO rankings.
+        <Feature icon="mdi:web" title="PASO 5: Resultados">
+          Los resultados para mayores de 18 años se publican 25 días hábiles posteriores al término del período de examinación.
+          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
+            IR AL PASO 5
+          </a>
         </Feature>
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
+ 
+<!--   <ContentMedia imgSrc="/accessible-components.webp">
     <h2>Accessible Components</h2>
     <p class="text-2xl">
       This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
@@ -58,15 +64,16 @@ import ContentMedia from '../components/ContentMedia.astro'
       navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
       reaching WCAG AA compliance.
     </p>
-  </ContentMedia>
+  </ContentMedia> -->
+
   <section class="mt-64 mb-32">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Counters</h2>
+      <h2 class="mb-16 text-6xl">Datos duros</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="130" title="Stars" sub="On GitHub" />
-        <Counter count="17" title="Accessible" sub="Components" />
-        <Counter count="500" title="Commits" sub="Merged" />
-        <Counter count="18+" title="Months" sub="Since launch" />
+        <Counter count="5 Millones" title="Personas" sub="No han terminado la enseñanza media en Chile" />
+        <Counter count="$350.000" title="Es lo que gana el 76%" sub="de los que no han terminado la escuela." />
+        <Counter count="78,9%" title="Viven en zonas rurales" sub="de Chile." />
+        <Counter count="2,4%" title="Avanzó de ciclo" sub="luego de rendir el examen." />
       </div>
     </div>
   </section>
