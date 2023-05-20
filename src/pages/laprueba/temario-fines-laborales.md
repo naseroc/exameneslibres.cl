@@ -1,6 +1,6 @@
 ---
-layout: ../layouts/MarkdownLayout.astro
-title: Markdown Page
+layout: ../../layouts/MarkdownLayout.astro
+title: Temario Exámenes Libres para Fines Laborales
 ---
 
 # Markdown Page
